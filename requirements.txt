@@ -1,13 +1,15 @@
-# Python 3.9+ (tested on 3.9.6, macOS)
-pandas==2.3.3
-numpy==2.0.2
-scipy==1.13.1
-matplotlib==3.9.4
-yfinance==1.2.0
-requests==2.32.5
-PyYAML==6.0.3
-pyarrow==21.0.0
-tabulate==0.9.0
-streamlit==1.50.0
-plotly==7.1.0
-pytest==8.4.2
+# Version ranges (not exact pins) so the app installs on any Python 3.9-3.14,
+# e.g. Streamlit Community Cloud, which may use the newest Python.
+# Upper bounds guard against future major releases with breaking changes.
+pandas>=2.2,<3
+numpy>=1.26,<3
+scipy>=1.11,<2
+matplotlib>=3.8,<4
+yfinance>=0.2.50,<2
+requests>=2.31,<3
+PyYAML>=6.0,<7
+pyarrow>=15
+tabulate>=0.9,<1
+streamlit>=1.50,<2
+plotly>=5.20,<7
+pytest>=8,<9
