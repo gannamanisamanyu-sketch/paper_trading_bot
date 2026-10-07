@@ -1,6 +1,6 @@
 # Investment Committee Memo
 **Strategy:** Systematic Multi-Factor U.S. Large-Cap Equity (Long-Only), Paper Portfolio
-**Prepared by:** [Your name] · **Date:** October 6, 2026
+**Prepared by:** Samanyu Gannamani · **Date:** October 6, 2026
 **Request:** Approval to continue running the strategy as a **paper portfolio**. No capital is requested.
 
 > Simulated results. Educational project; not investment advice.
