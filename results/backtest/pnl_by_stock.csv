@@ -1,0 +1,107 @@
+ticker,pnl,name,sector,trades
+PSX,9227.479787374437,Phillips 66,Energy,17
+GE,8899.84830369365,General Electric,Industrials,19
+BA,6766.16748114002,Boeing,Industrials,10
+MA,6274.834281353422,Mastercard,Financials,28
+AVGO,6244.560893664186,Broadcom (Avago),Information Technology,34
+META,6111.2267099811415,Meta Platforms (Facebook),Communication Services,32
+T,5430.966266783322,AT&T,Communication Services,10
+NFLX,5032.701359384444,Netflix,Communication Services,27
+COP,4796.334671555753,ConocoPhillips,Energy,20
+INTC,4674.209133871565,Intel,Information Technology,17
+NEE,4634.165605156706,NextEra Energy,Utilities,19
+MRK,4607.345469941578,Merck,Health Care,19
+AMZN,4580.582601809691,Amazon,Consumer Discretionary,23
+ADBE,4134.297380163574,Adobe,Information Technology,23
+WELL,3919.8693716462258,Welltower,Real Estate,18
+MO,3713.5517165171905,Altria,Consumer Staples,18
+TGT,3504.4656913557556,Target,Consumer Staples,16
+V,3293.6365605512747,Visa,Financials,23
+JNJ,3164.6988911702338,Johnson & Johnson,Health Care,11
+XOM,3051.1970596763986,Exxon Mobil,Energy,21
+AMT,3023.0339453026218,American Tower,Real Estate,8
+IBM,2935.642557569021,IBM,Information Technology,7
+AEP,2833.151991835828,American Electric Power,Utilities,21
+BRK-B,2805.6779835296693,Berkshire Hathaway,Financials,10
+MSFT,2789.8085573953103,Microsoft,Information Technology,22
+EOG,2507.1064736358658,EOG Resources,Energy,21
+NEM,2335.223996192006,Newmont,Materials,14
+TXN,2321.419194326094,Texas Instruments,Information Technology,12
+C,2260.7233902418757,Citigroup,Financials,12
+LLY,2215.059486808337,Eli Lilly,Health Care,30
+PCG,2180.3180262671995,PG&E,Utilities,6
+PLD,2134.440359545325,Prologis,Real Estate,12
+CCI,2040.4457808732577,Crown Castle,Real Estate,10
+RTX,1838.9826071899834,RTX (United Technologies),Industrials,16
+SBUX,1680.2088869933586,Starbucks,Consumer Discretionary,12
+PG,1376.003839027786,Procter & Gamble,Consumer Staples,4
+EQIX,1344.821025906006,Equinix,Real Estate,9
+CVX,1311.1623873200479,Chevron,Energy,22
+FCX,1267.4165344665053,Freeport-McMoRan,Materials,13
+UNH,1131.714766602041,UnitedHealth Group,Health Care,16
+JPM,1111.0953422976618,JPMorgan Chase,Financials,13
+ECL,940.5315658124164,Ecolab,Materials,4
+MS,896.6821755194528,Morgan Stanley,Financials,14
+EXC,776.3848061719982,Exelon,Utilities,24
+AAPL,720.8410865981568,Apple,Information Technology,18
+BIIB,639.9279981597901,Biogen,Health Care,6
+SO,400.0457754848085,Southern Company,Utilities,10
+F,368.6889851541455,Ford Motor,Consumer Discretionary,8
+PEP,316.52119730178674,PepsiCo,Consumer Staples,5
+SHW,221.20161510488833,Sherwin-Williams,Materials,2
+LMT,216.53568146286943,Lockheed Martin,Industrials,25
+MCD,192.8200236383218,McDonald's,Consumer Discretionary,11
+LOW,174.96415833032006,Lowe's,Consumer Discretionary,8
+MDT,73.43294781390796,Medtronic,Health Care,2
+GD,16.776468259992726,General Dynamics,Industrials,13
+GM,8.716664332504479,General Motors,Consumer Discretionary,13
+LYB,-0.2286404067554031,LyondellBasell,Materials,5
+SRE,-34.92071167839822,Sempra,Utilities,12
+TJX,-51.2428516782893,TJX Companies,Consumer Discretionary,10
+GILD,-209.2246694404257,Gilead Sciences,Health Care,11
+ABT,-248.9828138475641,Abbott Laboratories,Health Care,8
+VZ,-255.91948602947377,Verizon,Communication Services,8
+CMCSA,-262.912567317052,Comcast,Communication Services,6
+WMT,-306.3319669760567,Walmart,Consumer Staples,10
+UPS,-313.1604813968588,United Parcel Service,Industrials,7
+ABBV,-360.945927728013,AbbVie,Health Care,17
+AMGN,-388.30398236083965,Amgen,Health Care,1
+DIS,-493.74770142102716,Walt Disney,Communication Services,4
+AXP,-507.1095015443916,American Express,Financials,11
+ORCL,-573.2645403383017,Oracle,Information Technology,10
+WFC,-603.952324628297,Wells Fargo,Financials,9
+CSCO,-638.7084268621184,Cisco Systems,Information Technology,10
+KHC,-774.2686726778375,Kraft Heinz,Consumer Staples,2
+APD,-816.7923272728876,Air Products,Materials,13
+CHTR,-854.6627700439421,Charter Communications,Communication Services,8
+NKE,-906.7925676600535,Nike,Consumer Discretionary,5
+KMI,-945.7607411719409,Kinder Morgan,Energy,8
+KO,-989.4562065669352,Coca-Cola,Consumer Staples,4
+GS,-1005.3019413890961,Goldman Sachs,Financials,9
+BKNG,-1016.726553705792,Booking Holdings (Priceline),Consumer Discretionary,14
+SPG,-1021.8429253072682,Simon Property Group,Real Estate,16
+GOOGL,-1032.670080010099,Alphabet,Communication Services,19
+IP,-1063.2465029015839,International Paper,Materials,5
+CAT,-1070.3796183450431,Caterpillar,Industrials,22
+UNP,-1110.298641368934,Union Pacific,Industrials,3
+CVS,-1127.5091304465113,CVS Health,Health Care,8
+MMM,-1152.3158480833154,3M,Industrials,8
+PM,-1209.9814320858204,Philip Morris International,Consumer Staples,6
+BLK,-1224.9919012598675,BlackRock,Financials,5
+CL,-1233.7562234398247,Colgate-Palmolive,Consumer Staples,2
+HAL,-1505.0548477309349,Halliburton,Energy,13
+BAC,-1545.4575890337683,Bank of America,Financials,12
+OXY,-1585.2184225788365,Occidental Petroleum,Energy,11
+ACN,-1586.9268898110176,Accenture,Information Technology,9
+D,-1609.6688547400663,Dominion Energy,Utilities,7
+QCOM,-1738.763726849208,Qualcomm,Information Technology,13
+AIG,-1885.59849553211,American International Group,Financials,3
+PFE,-1900.3058881016382,Pfizer,Health Care,9
+HD,-2056.1801657384785,Home Depot,Consumer Discretionary,6
+DUK,-2309.4563385113966,Duke Energy,Utilities,13
+SLB,-2502.579317461791,Schlumberger,Energy,15
+BMY,-2668.310726535079,Bristol-Myers Squibb,Health Care,10
+COST,-3154.0918315941744,Costco,Consumer Staples,16
+FDX,-3257.151222159795,FedEx,Industrials,19
+PSA,-3553.5822450190008,Public Storage,Real Estate,14
+CRM,-3955.140884079712,Salesforce,Information Technology,10

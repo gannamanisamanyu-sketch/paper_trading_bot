@@ -1,0 +1,13 @@
+{
+  "created": "2026-10-06T22:06:49",
+  "starting_capital": 100000.0,
+  "cash": 100000.0,
+  "positions": {},
+  "last_processed_date": "2026-10-06",
+  "last_rebalance_period": "2026-10",
+  "peak_equity": 100000.0,
+  "drawdown_mode": false,
+  "stopped_since_rebalance": [],
+  "mode": "PAPER_TRADING_ONLY",
+  "last_run": "2026-10-06T22:07:03"
+}

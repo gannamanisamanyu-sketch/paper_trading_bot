@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-10-06",
+  "generated": "2026-10-06T22:07:16",
+  "capital": 100000.0,
+  "market_risk_on": true,
+  "gross_cap": 1.0,
+  "est_volatility": 0.11054903503249923,
+  "pre_target_volatility": 0.11054903503249923,
+  "invested": 0.9500000000000001,
+  "n_positions": 15,
+  "eligible_stocks": 109,
+  "notes": ""
+}

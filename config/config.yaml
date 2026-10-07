@@ -1,0 +1,124 @@
+# =====================================================================
+# Algorithmic U.S. Equity Paper Trading & Risk Management System
+# Central configuration. Every number that drives the strategy lives here,
+# so a backtest is fully reproducible from (code version + this file).
+#
+# IMPORTANT: these defaults were fixed BEFORE looking at the out-of-sample
+# test period. Do not tune them on the test period.
+# =====================================================================
+
+data:
+  start_date: "2015-01-01"        # first date downloaded (2015 = indicator warm-up year)
+  end_date: null                  # null = today
+  universe_file: "config/universe.csv"
+  cache_dir: "data/cache"
+  snapshot_file: "data/snapshot/sec_metrics.parquet"  # derived SEC fundamentals (public domain, committed)
+  benchmark: "SPY"                # total-return benchmark (ETF incl. dividends)
+  index_ticker: "^GSPC"           # S&P 500 price index (excludes dividends)
+  risk_free_ticker: "^IRX"        # 13-week T-bill yield (percent, annualized)
+  sec_user_agent: "paper-trading-bot educational research project admin@example.com"
+  max_daily_move_flag: 0.25       # log any |daily return| above 25% as a data-quality flag
+
+periods:
+  # Train: design + debugging. Validation: robustness checks / config choice.
+  # Test: run ONCE with frozen settings and reported as-is.
+  backtest_start: "2016-01-01"
+  train_end: "2019-12-31"
+  validation_end: "2021-12-31"
+  # test = day after validation_end -> latest available date
+
+strategy:
+  rebalance_frequency: "monthly"  # monthly | biweekly | weekly | quarterly
+  momentum_lookback: 252          # 12-month momentum ...
+  momentum_skip: 21               # ... skipping the most recent month (short-term reversal)
+  sector_momentum_lookback: 126   # 6-month sector trend
+  trend_sma: 200
+  fast_sma: 50
+  rsi_period: 14
+  rsi_max_entry: 80               # don't open NEW positions in very overbought names
+  vol_lookback: 63                # 3-month realized volatility
+  beta_lookback: 252
+  atr_period: 14
+  min_history_days: 252
+  min_price: 5.0
+  min_avg_dollar_volume: 20000000 # $20M/day average (63-day) traded value
+  winsorize_z: 3.0
+  # Factor weights: fixed a priori (not optimized). Positive weights sum to 0.9,
+  # the risk penalty takes 0.1 -> total absolute weight = 1.0
+  weights:
+    momentum: 0.30
+    trend: 0.15
+    sector: 0.10
+    quality: 0.15
+    value: 0.10
+    growth: 0.10
+    risk_penalty: 0.10
+  min_buy_score: 0.0              # must be above-average overall to be bought
+  sell_score: -0.25               # held names are sold if score falls below this
+  hold_rank_buffer: 2.0           # held names are kept while rank <= buffer * max_positions
+
+portfolio:
+  initial_capital: 100000
+  max_positions: 15
+  sizing_method: "volatility"     # "equal" | "volatility"
+  max_position_weight: 0.10       # 10% of equity per name
+  max_sector_weight: 0.30         # 30% of equity per sector
+  min_cash_weight: 0.05           # always keep >= 5% cash
+  max_position_risk: 0.03         # weight * annual vol <= 3% of equity per name
+  target_volatility: 0.16         # ~long-run S&P 500 vol; scale down gross exposure above it
+  rebalance_threshold: 0.01       # skip trades smaller than 1% of equity (turnover control)
+  cash_earns_risk_free: true      # idle cash earns the T-bill rate (like a money-market fund)
+
+risk:
+  use_stop_loss: true
+  # Trailing stop distance below the highest close since entry.
+  #  "volatility": stop_loss_vol_multiple x the stock's MONTHLY volatility
+  #                (annual vol x sqrt(21/252)). Default 2.0 -> a ~2-sigma monthly drop.
+  #  "atr":        stop_loss_atr_multiple x ATR(14) (classic swing-trading stop;
+  #                kept for the sensitivity analysis -- see RESEARCH_LOG.md, entry 1)
+  stop_method: "volatility"
+  stop_loss_vol_multiple: 2.0
+  stop_loss_atr_multiple: 3.0
+  market_regime_filter: true      # SPY below its 200-day SMA -> cap gross exposure
+  regime_gross_cap: 0.50
+  drawdown_limit: 0.15            # portfolio drawdown above 15% -> de-risk ...
+  drawdown_gross_cap: 0.50        # ... to 50% gross exposure ...
+  drawdown_reset: 0.10            # ... until drawdown recovers below 10%
+  var_confidence: 0.95
+
+costs:
+  commission_per_share: 0.0       # most U.S. retail brokers are commission-free
+  min_commission: 0.0
+  half_spread_bps: 2.0            # half of the bid/ask spread for large caps (~1-3 bps)
+  slippage_bps: 5.0               # market impact / timing slippage
+  # Total one-way cost ~= 7 bps. Sensitivity tests go up to 50 bps.
+
+paper_trading:
+  state_dir: "data/paper"
+  starting_capital: 100000
+  fill_model: "next_open"         # orders created after a close are filled at the next session's open
+
+alerts:
+  enabled: true
+  drawdown_alert: 0.10
+  macos_notifications: false      # set true to get macOS banner notifications
+  email:
+    enabled: false                # optional SMTP alerts (never sends orders)
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    sender: ""
+    recipient: ""
+    password_env_var: "PTB_EMAIL_PASSWORD"  # read from an environment variable, never stored in this file
+
+walk_forward:
+  first_test_year: 2019
+  # Small, pre-declared candidate set (4 configs). Chosen each year by trailing Sharpe.
+  candidates:
+    - {name: "mom12_vol",   momentum_lookback: 252, sizing_method: "volatility"}
+    - {name: "mom12_equal", momentum_lookback: 252, sizing_method: "equal"}
+    - {name: "mom6_vol",    momentum_lookback: 126, sizing_method: "volatility"}
+    - {name: "mom6_equal",  momentum_lookback: 126, sizing_method: "equal"}
+
+output:
+  results_dir: "results"
+  reports_dir: "reports"

@@ -1,0 +1,55 @@
+# Runs the paper portfolio every weekday after the U.S. close and commits the
+# updated state, so the website always shows the live paper track record.
+# PAPER TRADING ONLY: this workflow has no brokerage access of any kind.
+name: Daily paper trading
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"   # 21:30 UTC = 5:30pm EDT / 4:30pm EST, after the 4pm ET close
+  workflow_dispatch: {}        # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write              # needed to commit the updated paper-portfolio files
+
+concurrency:
+  group: paper-trading
+  cancel-in-progress: false
+
+jobs:
+  paper-trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}   # optional repo secret: "Your Name your@email.com"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh SEC fundamentals snapshot (Mondays only)
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then python main.py download || echo "SEC refresh failed; keeping snapshot"; fi
+
+      - name: Paper-trading cycle (fill orders at the open, mark to market, signals)
+        run: python main.py paper run
+
+      - name: Today's model portfolio for the website
+        run: python main.py signals
+
+      - name: Commit updated portfolio
+        run: |
+          git config user.name "paper-trading-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/paper results/live data/snapshot
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Paper trading update $(date -u +%Y-%m-%d)"
+            git push
+          fi

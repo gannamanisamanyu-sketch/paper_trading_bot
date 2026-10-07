@@ -1,0 +1,13 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.claude/
+
+# downloaded data (re-created by `python main.py download`)
+data/cache/
+
+logs/
+.ipynb_checkpoints/

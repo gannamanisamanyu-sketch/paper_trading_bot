@@ -1,0 +1,532 @@
+{
+  "generated": "2026-10-06T22:05:15",
+  "periods": {
+    "train": {
+      "strategy": {
+        "start": "2016-01-04",
+        "end": "2019-12-31",
+        "initial_capital": 100000.0,
+        "final_value": 147772.12157087348,
+        "total_return": 0.4777212157087347,
+        "cagr": 0.1028451193764861,
+        "volatility": 0.11576967502689359,
+        "sharpe": 0.7918760579784014,
+        "sortino": 1.0790533265953381,
+        "max_drawdown": -0.16858233002702427,
+        "var_95": 0.011711622286701927,
+        "es_95": 0.01853277761053351,
+        "best_day": 0.032903573830691535,
+        "worst_day": -0.03784659086766773,
+        "calmar": 0.6100587135081104,
+        "beta": 0.6846801333664925,
+        "alpha": 0.0006475005707450169,
+        "alpha_t": 0.017158645172201375,
+        "r2": 0.5784848279945386,
+        "information_ratio": -0.4832811532791225,
+        "correlation": 0.7605648918290266,
+        "num_trades": 482,
+        "total_costs": 1558.4485559006016,
+        "round_trips": 119,
+        "win_rate": 0.5126050420168067,
+        "profit_factor": 2.0500771222021164,
+        "avg_win": 908.4953835314994,
+        "avg_loss": -466.073453389228,
+        "avg_win_pct": 0.09446767142091622,
+        "avg_loss_pct": -0.06967820152507843,
+        "avg_holding_days": 149.46218487394958,
+        "avg_gross_exposure": 0.8483654922334358
+      },
+      "spy": {
+        "start": "2016-01-04",
+        "end": "2019-12-31",
+        "initial_capital": 99930.0,
+        "final_value": 172994.45232744477,
+        "total_return": 0.7311563327073429,
+        "cagr": 0.1474866783919322,
+        "volatility": 0.12859826391527066,
+        "sharpe": 1.0337914681531255,
+        "sortino": 1.432780078321061,
+        "max_drawdown": -0.1934891162776684,
+        "var_95": 0.013474181243259985,
+        "es_95": 0.021266680207634205,
+        "best_day": 0.05052492356250737,
+        "worst_day": -0.04182255516389033,
+        "calmar": 0.7622479301640926,
+        "beta": 1.0,
+        "alpha": 0.0,
+        "alpha_t": NaN,
+        "r2": 1.0,
+        "information_ratio": NaN,
+        "correlation": 1.0
+      }
+    },
+    "validation": {
+      "strategy": {
+        "start": "2019-12-31",
+        "end": "2021-12-31",
+        "initial_capital": 147772.12157087348,
+        "final_value": 167725.90546681403,
+        "total_return": 0.1350307736251215,
+        "cagr": 0.06533208201198759,
+        "volatility": 0.15271356318424142,
+        "sharpe": 0.47830523128097374,
+        "sortino": 0.6450876915797568,
+        "max_drawdown": -0.18379504430246374,
+        "var_95": 0.015382843608094665,
+        "es_95": 0.024289331716267078,
+        "best_day": 0.03612313977367876,
+        "worst_day": -0.043585839906373214,
+        "calmar": 0.3554616081186245,
+        "beta": 0.47125432106212495,
+        "alpha": -0.04031339538145445,
+        "alpha_t": -0.5975615610247149,
+        "r2": 0.6111204601705246,
+        "information_ratio": -1.0191406893341877,
+        "correlation": 0.7817032820939501,
+        "num_trades": 209,
+        "total_costs": 833.5925368400054,
+        "round_trips": 69,
+        "win_rate": 0.5217391304347826,
+        "profit_factor": 2.2765013539732672,
+        "avg_win": 1268.3633676426632,
+        "avg_loss": -607.8050979071367,
+        "avg_win_pct": 0.1278753894712693,
+        "avg_loss_pct": -0.08626840126498474,
+        "avg_holding_days": 174.57971014492753,
+        "avg_gross_exposure": 0.6702834160705516
+      },
+      "spy": {
+        "start": "2019-12-31",
+        "end": "2021-12-31",
+        "initial_capital": 172994.45232744477,
+        "final_value": 263516.9033341896,
+        "total_return": 0.5232679417684649,
+        "cagr": 0.2340297848990942,
+        "volatility": 0.2533269558786428,
+        "sharpe": 0.9495132507251152,
+        "sortino": 1.31108956590589,
+        "max_drawdown": -0.33717286856294393,
+        "var_95": 0.022092193014858427,
+        "es_95": 0.04038366648103608,
+        "best_day": 0.09060334784841895,
+        "worst_day": -0.10942377175936646,
+        "calmar": 0.6940943555053724,
+        "beta": 1.0,
+        "alpha": 0.0,
+        "alpha_t": NaN,
+        "r2": 1.0,
+        "information_ratio": NaN,
+        "correlation": 1.0
+      }
+    },
+    "test": {
+      "strategy": {
+        "start": "2021-12-31",
+        "end": "2026-10-06",
+        "initial_capital": 167725.90546681403,
+        "final_value": 200523.78116694425,
+        "total_return": 0.1955444843707792,
+        "cagr": 0.038202615721134814,
+        "volatility": 0.1121111623986356,
+        "sharpe": 0.03949647495016823,
+        "sortino": 0.05294754856627101,
+        "max_drawdown": -0.1617528815877588,
+        "var_95": 0.011646359966387786,
+        "es_95": 0.01716736974334674,
+        "best_day": 0.025917623944752943,
+        "worst_day": -0.04012064802370363,
+        "calmar": 0.23617888810474166,
+        "beta": 0.41720373390008714,
+        "alpha": -0.03446494895708618,
+        "alpha_t": -0.8740964009596391,
+        "r2": 0.4148372982098339,
+        "information_ratio": -0.6708068540862444,
+        "correlation": 0.6443378861609641,
+        "num_trades": 643,
+        "total_costs": 3024.555556395254,
+        "round_trips": 170,
+        "win_rate": 0.4117647058823529,
+        "profit_factor": 1.1898253427827281,
+        "avg_win": 1493.0919052922895,
+        "avg_loss": -878.4182821826633,
+        "avg_win_pct": 0.09954688084532123,
+        "avg_loss_pct": -0.08582459919112483,
+        "avg_holding_days": 146.16470588235293,
+        "avg_gross_exposure": 0.7253807090070794
+      },
+      "spy": {
+        "start": "2021-12-31",
+        "end": "2026-10-06",
+        "initial_capital": 263516.9033341896,
+        "final_value": 460536.3555253402,
+        "total_return": 0.7476539443896408,
+        "cagr": 0.12433243995149246,
+        "volatility": 0.17308726057166265,
+        "sharpe": 0.5387297993420116,
+        "sortino": 0.775862696086188,
+        "max_drawdown": -0.24496392325498606,
+        "var_95": 0.016551203353836034,
+        "es_95": 0.02486879760200235,
+        "best_day": 0.10501940080127681,
+        "worst_day": -0.05854315282544731,
+        "calmar": 0.5075540851053126,
+        "beta": 1.0,
+        "alpha": 0.0,
+        "alpha_t": NaN,
+        "r2": 1.0,
+        "information_ratio": NaN,
+        "correlation": 1.0
+      }
+    },
+    "full": {
+      "strategy": {
+        "start": "2016-01-04",
+        "end": "2026-10-06",
+        "initial_capital": 100000.0,
+        "final_value": 200523.78116694425,
+        "total_return": 1.0052378116694425,
+        "cagr": 0.06683504428493436,
+        "volatility": 0.12197190915149714,
+        "sharpe": 0.4072065784706602,
+        "sortino": 0.5497132044232529,
+        "max_drawdown": -0.18379504430246374,
+        "var_95": 0.012134213554745414,
+        "es_95": 0.019239476874579175,
+        "best_day": 0.03612313977367876,
+        "worst_day": -0.043585839906373214,
+        "calmar": 0.36363899004233624,
+        "beta": 0.4902898090223452,
+        "alpha": -0.01676498491434297,
+        "alpha_t": -0.6398868361058245,
+        "r2": 0.5062898499261501,
+        "information_ratio": -0.6897011400463026,
+        "correlation": 0.711553968473122,
+        "num_trades": 1334,
+        "total_costs": 5416.596649135861,
+        "round_trips": 358,
+        "win_rate": 0.4664804469273743,
+        "profit_factor": 1.5237027244716768,
+        "avg_win": 1231.112173658788,
+        "avg_loss": -706.4484646375762,
+        "avg_win_pct": 0.10379834513062317,
+        "avg_loss_pct": -0.08099818245712843,
+        "avg_holding_days": 152.73743016759778,
+        "avg_gross_exposure": 0.7606808494821327
+      },
+      "spy": {
+        "start": "2016-01-04",
+        "end": "2026-10-06",
+        "initial_capital": 99930.0,
+        "final_value": 460536.3555253402,
+        "total_return": 3.6085895679509674,
+        "cagr": 0.15266393406387935,
+        "volatility": 0.1770256465153989,
+        "sharpe": 0.7654505533776579,
+        "sortino": 1.0759024160356294,
+        "max_drawdown": -0.33717286856294393,
+        "var_95": 0.016584590067169884,
+        "es_95": 0.026953298081983906,
+        "best_day": 0.10501940080127681,
+        "worst_day": -0.10942377175936646,
+        "calmar": 0.45277644881257645,
+        "beta": 1.0,
+        "alpha": 0.0,
+        "alpha_t": NaN,
+        "r2": 1.0,
+        "information_ratio": NaN,
+        "correlation": 1.0
+      }
+    }
+  },
+  "sp500_price_index": {
+    "start": "2016-01-04",
+    "end": "2026-10-06",
+    "initial_capital": 100000.0,
+    "final_value": 388487.3770531276,
+    "total_return": 2.8848737705312764,
+    "cagr": 0.13449856367822988,
+    "volatility": 0.17816856368780234,
+    "sharpe": 0.672330962589861,
+    "sortino": 0.9415576214785863,
+    "max_drawdown": -0.3392496000265327,
+    "var_95": 0.016463221334947327,
+    "es_95": 0.027112685791675518,
+    "best_day": 0.09515387644904871,
+    "worst_day": -0.11984055240393432,
+    "calmar": 0.39645901916379783,
+    "beta": 1.004880568231541,
+    "alpha": -0.016377488792329843,
+    "alpha_t": -5.380164535626323,
+    "r2": 0.9968761196699036,
+    "information_ratio": -1.5723455704457445,
+    "correlation": 0.9984369100608399
+  },
+  "bounds": {
+    "train": [
+      "2016-01-01",
+      "2019-12-31"
+    ],
+    "validation": [
+      "2020-01-01",
+      "2021-12-31"
+    ],
+    "test": [
+      "2022-01-01",
+      "2026-10-06"
+    ],
+    "full": [
+      "2016-01-01",
+      "2026-10-06"
+    ]
+  },
+  "decomposition": {
+    "strategy_cagr": 0.06685262027564298,
+    "beta_matched_cagr": 0.08884947310273983,
+    "spy_cagr": 0.1527056372800646,
+    "beta": 0.4902898090223452,
+    "selection_and_timing_effect": -0.021996852827096847
+  },
+  "walk_forward": {
+    "summary": {
+      "start": "2018-12-31",
+      "end": "2026-10-06",
+      "initial_capital": 100000.0,
+      "final_value": 148053.38725240243,
+      "total_return": 0.48053387252402424,
+      "cagr": 0.051836585937231616,
+      "volatility": 0.12139670839623791,
+      "sharpe": 0.25322842525883754,
+      "sortino": 0.34350913888457846,
+      "max_drawdown": -0.19748781004384064,
+      "var_95": 0.012098823942795819,
+      "es_95": 0.01884623859351509,
+      "best_day": 0.03490106853697639,
+      "worst_day": -0.043132233453458624,
+      "calmar": 0.262479926865989,
+      "beta": 0.4528215000842172,
+      "alpha": -0.03845105747237281,
+      "alpha_t": -1.2623085647658339,
+      "r2": 0.5140218452872011,
+      "information_ratio": -0.9042044838173472,
+      "correlation": 0.7169643785969203
+    },
+    "spy": {
+      "start": "2018-12-31",
+      "end": "2026-10-06",
+      "initial_capital": 100000.0,
+      "final_value": 349337.0569720695,
+      "total_return": 2.4933705697206947,
+      "cagr": 0.17480227326373443,
+      "volatility": 0.19221023824028566,
+      "sharpe": 0.7949851385492305,
+      "sortino": 1.1228385529581038,
+      "max_drawdown": -0.33717286856294393,
+      "var_95": 0.01707201087276999,
+      "es_95": 0.02881190372409579,
+      "best_day": 0.10501940080127681,
+      "worst_day": -0.10942377175936668,
+      "calmar": 0.5184351694985271,
+      "beta": 1.0,
+      "alpha": 0.0,
+      "alpha_t": NaN,
+      "r2": 1.0,
+      "information_ratio": NaN,
+      "correlation": 1.0
+    }
+  },
+  "universe": {
+    "active": 109,
+    "excluded": [
+      {
+        "ticker": "EMC",
+        "name": "EMC Corp",
+        "status": "delisted",
+        "note": "Acquired by Dell 2016"
+      },
+      {
+        "ticker": "TWX",
+        "name": "Time Warner",
+        "status": "delisted",
+        "note": "Acquired by AT&T 2018"
+      },
+      {
+        "ticker": "WBA",
+        "name": "Walgreens Boots Alliance",
+        "status": "delisted",
+        "note": "Taken private 2025"
+      },
+      {
+        "ticker": "RAI",
+        "name": "Reynolds American",
+        "status": "delisted",
+        "note": "Acquired by BAT 2017"
+      },
+      {
+        "ticker": "CELG",
+        "name": "Celgene",
+        "status": "delisted",
+        "note": "Acquired by Bristol-Myers 2019"
+      },
+      {
+        "ticker": "ESRX",
+        "name": "Express Scripts",
+        "status": "delisted",
+        "note": "Acquired by Cigna 2018"
+      },
+      {
+        "ticker": "AGN",
+        "name": "Allergan",
+        "status": "delisted",
+        "note": "Acquired by AbbVie 2020"
+      },
+      {
+        "ticker": "APC",
+        "name": "Anadarko Petroleum",
+        "status": "delisted",
+        "note": "Acquired by Occidental 2019"
+      },
+      {
+        "ticker": "MON",
+        "name": "Monsanto",
+        "status": "delisted",
+        "note": "Acquired by Bayer 2018"
+      },
+      {
+        "ticker": "PX",
+        "name": "Praxair",
+        "status": "delisted",
+        "note": "Merged into Linde 2018"
+      },
+      {
+        "ticker": "EQR",
+        "name": "Equity Residential",
+        "status": "no_data",
+        "note": "Yahoo returns only 1 day of history (2026 corporate event); excluded"
+      }
+    ]
+  },
+  "config": {
+    "data": {
+      "start_date": "2015-01-01",
+      "end_date": null,
+      "universe_file": "config/universe.csv",
+      "cache_dir": "data/cache",
+      "benchmark": "SPY",
+      "index_ticker": "^GSPC",
+      "risk_free_ticker": "^IRX",
+      "sec_user_agent": "paper-trading-bot educational research project admin@example.com",
+      "max_daily_move_flag": 0.25
+    },
+    "periods": {
+      "backtest_start": "2016-01-01",
+      "train_end": "2019-12-31",
+      "validation_end": "2021-12-31"
+    },
+    "strategy": {
+      "rebalance_frequency": "monthly",
+      "momentum_lookback": 252,
+      "momentum_skip": 21,
+      "sector_momentum_lookback": 126,
+      "trend_sma": 200,
+      "fast_sma": 50,
+      "rsi_period": 14,
+      "rsi_max_entry": 80,
+      "vol_lookback": 63,
+      "beta_lookback": 252,
+      "atr_period": 14,
+      "min_history_days": 252,
+      "min_price": 5.0,
+      "min_avg_dollar_volume": 20000000,
+      "winsorize_z": 3.0,
+      "weights": {
+        "momentum": 0.3,
+        "trend": 0.15,
+        "sector": 0.1,
+        "quality": 0.15,
+        "value": 0.1,
+        "growth": 0.1,
+        "risk_penalty": 0.1
+      },
+      "min_buy_score": 0.0,
+      "sell_score": -0.25,
+      "hold_rank_buffer": 2.0
+    },
+    "portfolio": {
+      "initial_capital": 100000,
+      "max_positions": 15,
+      "sizing_method": "volatility",
+      "max_position_weight": 0.1,
+      "max_sector_weight": 0.3,
+      "min_cash_weight": 0.05,
+      "max_position_risk": 0.03,
+      "target_volatility": 0.16,
+      "rebalance_threshold": 0.01,
+      "cash_earns_risk_free": true
+    },
+    "risk": {
+      "use_stop_loss": true,
+      "stop_method": "volatility",
+      "stop_loss_vol_multiple": 2.0,
+      "stop_loss_atr_multiple": 3.0,
+      "market_regime_filter": true,
+      "regime_gross_cap": 0.5,
+      "drawdown_limit": 0.15,
+      "drawdown_gross_cap": 0.5,
+      "drawdown_reset": 0.1,
+      "var_confidence": 0.95
+    },
+    "costs": {
+      "commission_per_share": 0.0,
+      "min_commission": 0.0,
+      "half_spread_bps": 2.0,
+      "slippage_bps": 5.0
+    },
+    "paper_trading": {
+      "state_dir": "data/paper",
+      "starting_capital": 100000,
+      "fill_model": "next_open"
+    },
+    "alerts": {
+      "enabled": true,
+      "drawdown_alert": 0.1,
+      "macos_notifications": false,
+      "email": {
+        "enabled": false,
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "sender": "",
+        "recipient": "",
+        "password_env_var": "PTB_EMAIL_PASSWORD"
+      }
+    },
+    "walk_forward": {
+      "first_test_year": 2019,
+      "candidates": [
+        {
+          "name": "mom12_vol",
+          "momentum_lookback": 252,
+          "sizing_method": "volatility"
+        },
+        {
+          "name": "mom12_equal",
+          "momentum_lookback": 252,
+          "sizing_method": "equal"
+        },
+        {
+          "name": "mom6_vol",
+          "momentum_lookback": 126,
+          "sizing_method": "volatility"
+        },
+        {
+          "name": "mom6_equal",
+          "momentum_lookback": 126,
+          "sizing_method": "equal"
+        }
+      ]
+    },
+    "output": {
+      "results_dir": "results",
+      "reports_dir": "reports"
+    }
+  }
+}
