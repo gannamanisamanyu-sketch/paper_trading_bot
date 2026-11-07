@@ -1,13 +1,114 @@
 {
   "created": "2026-10-06T22:06:49",
   "starting_capital": 100000.0,
-  "cash": 100000.0,
-  "positions": {},
-  "last_processed_date": "2026-10-06",
+  "cash": 8076.419297841061,
+  "positions": {
+    "PSX": {
+      "ticker": "PSX",
+      "shares": 24.0,
+      "avg_cost": 272.0302843353271,
+      "entry_date": "2026-10-07",
+      "peak_price": 297.2900085449219
+    },
+    "TGT": {
+      "ticker": "TGT",
+      "shares": 46.0,
+      "avg_cost": 154.12781827545166,
+      "entry_date": "2026-10-07",
+      "peak_price": 163.10000610351562
+    },
+    "MRK": {
+      "ticker": "MRK",
+      "shares": 38.0,
+      "avg_cost": 142.12941977844238,
+      "entry_date": "2026-10-07",
+      "peak_price": 150.36000061035156
+    },
+    "CSCO": {
+      "ticker": "CSCO",
+      "shares": 48.0,
+      "avg_cost": 117.15194869461057,
+      "entry_date": "2026-10-07",
+      "peak_price": 118.38999938964844
+    },
+    "EOG": {
+      "ticker": "EOG",
+      "shares": 40.0,
+      "avg_cost": 145.5017738922119,
+      "entry_date": "2026-10-07",
+      "peak_price": 165.5399932861328
+    },
+    "COP": {
+      "ticker": "COP",
+      "shares": 50.0,
+      "avg_cost": 131.3818962814331,
+      "entry_date": "2026-10-07",
+      "peak_price": 154.02999877929688
+    },
+    "JNJ": {
+      "ticker": "JNJ",
+      "shares": 36.0,
+      "avg_cost": 256.38933844909667,
+      "entry_date": "2026-10-07",
+      "peak_price": 276.32000732421875
+    },
+    "BMY": {
+      "ticker": "BMY",
+      "shares": 124.0,
+      "avg_cost": 59.491615763473504,
+      "entry_date": "2026-10-07",
+      "peak_price": 64.19000244140625
+    },
+    "FCX": {
+      "ticker": "FCX",
+      "shares": 60.0,
+      "avg_cost": 71.36992369461059,
+      "entry_date": "2026-10-07",
+      "peak_price": 73.69000244140625
+    },
+    "TXN": {
+      "ticker": "TXN",
+      "shares": 20.0,
+      "avg_cost": 290.70335,
+      "entry_date": "2026-10-07",
+      "peak_price": 312.94000244140625
+    },
+    "XOM": {
+      "ticker": "XOM",
+      "shares": 47.0,
+      "avg_cost": 165.71592610778808,
+      "entry_date": "2026-10-07",
+      "peak_price": 187.25
+    },
+    "NEM": {
+      "ticker": "NEM",
+      "shares": 40.0,
+      "avg_cost": 112.51871044311522,
+      "entry_date": "2026-10-07",
+      "peak_price": 120.91000366210938
+    },
+    "GILD": {
+      "ticker": "GILD",
+      "shares": 52.0,
+      "avg_cost": 145.38169477844238,
+      "entry_date": "2026-10-07",
+      "peak_price": 174.47999572753906
+    },
+    "AAPL": {
+      "ticker": "AAPL",
+      "shares": 21.0,
+      "avg_cost": 337.19586344909663,
+      "entry_date": "2026-10-07",
+      "peak_price": 349.510009765625
+    }
+  },
+  "last_processed_date": "2026-11-06",
   "last_rebalance_period": "2026-10",
-  "peak_equity": 100000.0,
+  "peak_equity": 104015.96523920384,
   "drawdown_mode": false,
-  "stopped_since_rebalance": [],
+  "stopped_since_rebalance": [
+    "INTC"
+  ],
   "mode": "PAPER_TRADING_ONLY",
-  "last_run": "2026-10-06T22:07:03"
+  "last_run": "2026-11-07T15:42:01"
 }
