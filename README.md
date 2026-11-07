@@ -5,7 +5,7 @@ risk-controlled portfolio, backtests it without look-ahead bias, evaluates it ou
 against the S&P 500, and runs it forward as a **paper-trading portfolio** that a GitHub Action
 updates every trading day, with a multi-page web app and alerts.
 
-**🌐 Live web app:** https://samanyu-paper-trading.streamlit.app · **📄 [Investment committee memo](reports/investment_committee_report.md)** ·
+**🌐 Live dashboard:** https://claude.ai/artifact/T1STF2kKeaKFjgdo99Mq1e · **📄 [Investment committee memo](reports/investment_committee_report.md)** ·
 **📊 [Full performance report](reports/performance_report.md)**
 
 > ⚠️ **Educational paper-trading project. Not investment advice.** The system never connects to a
